@@ -1,0 +1,1 @@
+# text-extraction-and-translation-app-using-Ms-Azure-service-
