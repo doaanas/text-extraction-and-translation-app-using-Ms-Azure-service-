@@ -46,6 +46,6 @@ jobs:
 
     - name: Run Streamlit App
       run: |
-        streamlit run app.py --server.headless true &
+        streamlit run Azure.py --server.headless true &
         sleep 30  # Let it run for 30 seconds to ensure it starts successfully
         pkill streamlit  # Stop the Streamlit server after testing
