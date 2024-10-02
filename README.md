@@ -35,3 +35,5 @@ Access the web application in your browser and start extracting and translating 
 Contributions
 Contributions to this project are welcome. Feel free to fork the repository, make improvements, and submit pull requests. Bug fixes, feature enhancements, and translations to additional languages are highly appreciated.
 
+you can give it a try just follow the link :
+https://textextractorandtranslator.streamlit.app/
