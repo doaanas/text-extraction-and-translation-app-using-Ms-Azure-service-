@@ -21,9 +21,12 @@ jobs:
       with:
         python-version: '3.10.12'  # Ensure compatibility with your packages
 
-    - name: Upgrade pip, setuptools, wheel
+    - name: Install dependencies
       run: |
         pip install --upgrade pip setuptools wheel
+        pip install -r requirements.txt
+        pip install azure-ai-vision --pre
+
 
     - name: Install backend build dependencies (PEP 517)
       run: pip install build
