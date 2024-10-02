@@ -2,10 +2,6 @@ IPython
 Pillow==8.4.0
 matplotlib
 requests
-json
-os
-time
-io
 ipywidgets
 dotenv
 azure-ai-vision-imageanalysis==1.0.0b3
