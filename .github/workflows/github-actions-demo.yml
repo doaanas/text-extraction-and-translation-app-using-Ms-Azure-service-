@@ -19,12 +19,11 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: '3.10.12'  # Use your specific version
+        python-version: '3.10.12'  # Ensure compatibility with your packages
 
-    - name: Reinstall setuptools and wheel
+    - name: Upgrade pip, setuptools, wheel
       run: |
-        pip install --upgrade pip
-        pip install --force-reinstall setuptools wheel
+        pip install --upgrade pip setuptools wheel
 
     - name: Install backend build dependencies (PEP 517)
       run: pip install build
