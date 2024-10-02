@@ -1,11 +1,11 @@
-IPython 
-Pillow==9.4.0  # Updated to avoid zlib issues
+IPython
+Pillow==8.4.0
 matplotlib
 requests
 ipywidgets
-python-dotenv  # Correct package name for dotenv
-azure-ai-vision==1.0.0b3  # If this causes errors, consider commenting it out temporarily
+python-dotenv  # Changed from dotenv to python-dotenv
+azure-ai-vision==1.0.0  # Update version as per compatibility
 azure-ai-textanalytics==5.3.0
 azure-ai-translation-text==1.0.0b1
-azure-cognitiveservices-speech==1.18.0
+azure-cognitiveservices-speech
 streamlit
