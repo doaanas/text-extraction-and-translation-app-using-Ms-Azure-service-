@@ -1,10 +1,10 @@
-IPython 
+IPython
 Pillow==8.4.0
 matplotlib
 requests
 ipywidgets
-dotenv
-azure-ai-vision-imageanalysis==1.0.0b3
+python-dotenv  # Changed from dotenv to python-dotenv
+azure-ai-vision==1.0.0  # Update version as per compatibility
 azure-ai-textanalytics==5.3.0
 azure-ai-translation-text==1.0.0b1
 azure-cognitiveservices-speech
