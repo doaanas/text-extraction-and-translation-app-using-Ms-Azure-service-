@@ -6,6 +6,7 @@ ipywidgets
 python-dotenv  # Correct package name
 azure-ai-vision==1.0.0b2
 azure-ai-textanalytics==5.3.0
+azure-ai-formrecognizer==4.0.0
 azure-ai-translation-text==1.0.0b1
 azure-cognitiveservices-speech==1.18.0  # Use the latest version
 streamlit
