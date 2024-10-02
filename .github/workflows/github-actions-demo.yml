@@ -19,20 +19,30 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: '3.10.12'  # You can change this to your required Python version
+        python-version: '3.10.12'  # Ensure compatibility with your packages
+
+    - name: Upgrade pip, setuptools, wheel
+      run: |
+        pip install --upgrade pip setuptools wheel
+
+    - name: Cache pip dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
 
     - name: Install dependencies
       run: |
-        pip install --upgrade pip setuptools wheel
-        python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Install Rust for transformers
       run: |
-        sudo apt-get install -y rustc
+        sudo apt-get update && sudo apt-get install -y rustc cargo
 
     - name: Run Streamlit App
       run: |
         streamlit run app.py --server.headless true &
         sleep 30  # Let it run for 30 seconds to ensure it starts successfully
-        pkill streamlit  # Stop the Streamlit server
+        pkill streamlit  # Stop the Streamlit server after testing
