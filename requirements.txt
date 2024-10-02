@@ -1,6 +1,5 @@
 IPython 
-IPython
-PIL
+PIL==8.4.0
 matplotlib
 requests
 json
