@@ -112,9 +112,9 @@ if uploaded_file is not None:
                 st.error(f"Error: {e}")
         
         # button for listening to translation
-        if st.session_state.translated_text:
-           if st.button("Listen to translation"):
-               speak(st.session_state.translated_text )
+      #  if st.session_state.translated_text:
+       #    if st.button("Listen to translation"):
+         #      speak(st.session_state.translated_text )
     
         
                 
